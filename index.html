@@ -9,16 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
+<style>
+    body {
+        background-color: #121212; /* Dark background for a sleek appearance */
+        color: #ffffff; /* White text for contrast */
+    }
+</style>
 <body>
     <header>
         <nav>
             <div class="logo">XylonRobotics</div>
             <ul>
                 <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#team">Team</a></li>
                 <li><a href="#applications">Applications</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="cta-button">Explore More</a></li>
+                <!-- <li><a href="#" class="cta-button">Explore More</a></li> -->
             </ul>
         </nav>
         <div class="hero">
@@ -28,7 +34,7 @@
                 <a href="#solutions" class="cta-button primary">Discover Our Solutions</a>
             </div>
             <div class="hero-image">
-                <img src="XR-Logo.png" alt="XylonRobotics Hero Image">
+                <img src="assets/XR-Logo.png" alt="XylonRobotics Hero Image">
                 </div>
         </div>
     </header>
@@ -36,22 +42,41 @@
     <!-- ############################################################################ -->
     <!-- SOLUTIONS -->
     <section id="solutions" class="features-section">
-        <h2>Our Intelligent Robotics Solutions</h2>
+        <style>
+            .features-grid {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                animation: fadeInUp 1.5s ease-in-out;
+            }
+
+            @keyframes fadeInUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+        <h2 style="color: grey;">Our Intelligent Robotics Solutions</h2>
         <div class="features-grid">
             <div class="feature-item">
                 <img src="assets/agrodrone.png" alt="Agrotech Drones Icon">
                 <h3>Agrotech Drones</h3>
-                <p>Advanced drone technology for precision agriculture, including crop monitoring, automated spraying, and yield optimization.</p>
+                <p style="color: gray;">Advanced drone technology for precision agriculture, including crop monitoring, automated spraying, and yield optimization.</p>
             </div>
             <div class="feature-item">
                 <img src="assets/quadrupedRob.png" alt="Legged Robots Icon">
                 <h3>Legged Robots</h3>
-                <p>Versatile and adaptable legged robots designed for complex terrains in agriculture and for advanced home assistance tasks.</p>
+                <p style="color: gray;">Versatile and adaptable legged robots designed for complex terrains in agriculture and for advanced home assistance tasks.</p>
             </div>
             <div class="feature-item">
                 <img src="assets/assistant.png" alt="Home Assistant Robots Icon">
                 <h3>Home Assistant Robots</h3>
-                <p>Intelligent and user-friendly robots to assist with household chores, security, and enhancing daily comfort.</p>
+                <p style="color: gray;">Intelligent and user-friendly robots to assist with household chores, security, and enhancing daily comfort.</p>
             </div>
         </div>
     </section>
@@ -59,22 +84,41 @@
     <!-- ############################################################################ -->
     <!-- APPLICATIONS -->
     <section id="applications" class="how-it-works-section">
-        <h2>Applications Across Industries</h2>
+        <style>
+            .steps {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                animation: fadeInUp 1.5s ease-in-out;
+            }
+
+            @keyframes fadeInUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+        <h2 style="color: grey;">Applications Across Industries</h2>
         <div class="steps">
             <div class="step">
                 <span>1</span>
                 <h3>Precision Agriculture</h3>
-                <p>Our drones and legged robots provide farmers with valuable insights and automation capabilities for optimized crop management.</p>
+                <p style="color: gray;">Our drones and legged robots provide farmers with valuable insights and automation capabilities for optimized crop management.</p>
             </div>
             <div class="step">
                 <span>2</span>
                 <h3>Smart Homes</h3>
-                <p>Our home assistant robots offer convenience, security, and support for various household tasks, enhancing the quality of life.</p>
+                <p style="color: gray;">Our home assistant robots offer convenience, security, and support for various household tasks, enhancing the quality of life.</p>
             </div>
             <div class="step">
                 <span>3</span>
                 <h3>Research & Development</h3>
-                <p>Our versatile robotic platforms can be adapted for various research purposes, pushing the boundaries of robotics technology.</p>
+                <p style="color: gray;">Our versatile robotic platforms can be adapted for various research purposes, pushing the boundaries of robotics technology.</p>
             </div>
             </div>
     </section>
@@ -82,23 +126,23 @@
     <!-- ############################################################################ -->
     <!-- TEAM -->
     <section id="team" class="team-section">
-        <h2>Meet Our Team</h2>
+        <h2 style="color: aqua;">Meet Our Team</h2>
         <div class="team-grid">
             <div class="team-member">
-                <img src="https://via.placeholder.com/150/666/fff?Text=John+D." alt="X-I - CEO">
-                <h3>John Doe</h3>
+                <img src="assets/person.png" alt="CEO">
+                <h3>Name - CEO</h3>
                 <p class="role">CEO & Founder</p>
                 <p class="bio">A visionary leader with over 15 years of experience in robotics and artificial intelligence. Passionate about creating innovative solutions for real-world problems.</p>
                 </div>
             <div class="team-member">
-                <img src="https://via.placeholder.com/150/666/fff?Text=Jane+S." alt="X-II - Lead Robotics Engineer">
-                <h3>Jane Smith</h3>
+                <img src="assets/person.png" alt="Lead Robotics Engineer">
+                <h3>Name - Lead Robotics Engineer</h3>
                 <p class="role">Lead Robotics Engineer</p>
                 <p class="bio">An expert in robotics design and control systems. Dedicated to developing robust and efficient robotic platforms for various applications.</p>
                 </div>
             <div class="team-member">
-                <img src="https://via.placeholder.com/150/666/fff?Text=Peter+K." alt="X-II - AI Specialist">
-                <h3>Peter Klein</h3>
+                <img src="assets/person.png" alt="AI Specialist">
+                <h3>Name - AI Specialist</h3>
                 <p class="role">AI Specialist</p>
                 <p class="bio">Focused on developing intelligent algorithms and machine learning models to power our robots, enabling autonomous and adaptive behavior.</p>
                 </div>
@@ -108,7 +152,7 @@
     <!-- ############################################################################ -->
     <!-- CONTACT -->
     <section id="contact" class="contact-section">
-        <h2>Contact XylonRobotics</h2>
+        <h2 style="color: grey;">Contact XylonRobotics</h2>
         <p>Have questions or want to learn more about our intelligent robotics solutions? Reach out to our team.</p>
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSebXTB_37zejTrSPaNlcn2ltZwLnql2f5yY4I7iynbDsrl8GQ/formResponse" method="post" target="_blank">
             <input type="text" name="entry.966224623" placeholder="Your Name" itemid="414382515">
@@ -122,10 +166,10 @@
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 XylonRobotics. All rights reserved.</p>
-        <ul>
+        <!-- <ul>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
-        </ul>
+        </ul> -->
     </footer>
 
     <script src="js/script.js"></script>
